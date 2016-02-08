@@ -1,25 +1,19 @@
-<% members = ["davidov2", "louis", "rorotito"] %>
-
-
-<h1 class="text-center"> My Team has <%= members.length %> members</h1>
-
-
 <div class="text-center">
+<h1>My awesome team</h1>
   <div class="container">
     <div class="row">
-
-    <% members.each do |member| %>
-      <div class="col-xs-4">
-
-      <% link_to "index.html" do %>
-         <img src="http://placehold.it/90x90" alt="" class="img-circle">
-        <p><%= member %></p>
-      <% end %>
-
+      <div class="col-xs-12 col-md-4">
+        <img src="http://placehold.it/80x80" alt="" class="img-circle">
+        <p>Louis</p>
       </div>
-    <% end %>
+      <div class="col-xs-12 col-md-4">
+        <img src="http://placehold.it/80x80" alt="" class="img-circle">
+        <p>Henri</p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <img src="http://placehold.it/80x80" alt="" class="img-circle">
+        <p>Paul</p>
+      </div>
     </div>
-
   </div>
-
 </div>

@@ -14,6 +14,11 @@ activate :autoprefixer
 # Page options, layouts, aliases and proxies
 ###
 
+data.flats.each do |member, flat|
+  proxy "/flats/#{member}.html", "/flats/show.html", :locals => { :owner => member }
+end
+
+
 # Per-page layout changes:
 #
 # With no layout
