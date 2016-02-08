@@ -1,0 +1,15 @@
+seb:
+  image: seb.jpg
+  description: charming room with patio
+  city: paris
+  background: card-paris.jpg
+anne:
+  image: anne.jpg
+  description: charming room with patio
+  city: brussels
+  background: card-brussels.jpeg
+romain:
+  image: romain.jpeg
+  description: charming room with patio
+  city: london
+  background: card-london.jpeg
