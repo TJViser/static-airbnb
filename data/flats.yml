@@ -1,15 +1,27 @@
 seb:
-  image: seb.jpg
-  description: charming room with patio
-  city: paris
-  background: card-paris.jpg
-anne:
-  image: anne.jpg
-  description: charming room with patio
-  city: brussels
-  background: card-brussels.jpeg
+  owner_name: Sebastien Saunier
+  picture: seb.jpg
+  owner_picture: card-paris.jpg
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+  wc: true
 romain:
-  image: romain.jpeg
-  description: charming room with patio
-  city: london
-  background: card-london.jpeg
+  owner_name: Romain Paillard
+  picture: romain.jpeg
+  owner_picture: card-london.jpeg
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+  wc: false
+anne:
+  owner_name: Anne
+  picture: anne.jpg
+  owner_picture: card-brussels.jpeg
+  name: Anne's home
+  summary: J'adore les frites
+  city: Brussels, une fois
+  wifi: false
+  wc: true

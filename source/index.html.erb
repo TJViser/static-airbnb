@@ -42,28 +42,22 @@ title: Le Wagon Middleman boilerplate
         </div>
       </div>
     </div>
-    <div class="wrapper-grey padded">
+
+
+<div class="wrapper-grey padded">
       <div class="container">
         <h2 class="text-center">Your next trip</h2>
         <div class="row">
 
-        <% data.flats.each do |owner, flat| %>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/<%= flat.background %>');">
-              <div class="card-category"><%= flat.city %></div>
-              <div class="card-description">
-                <h2><%= owner %>'s home</h2>
-                <p><%= flat.description %></p>
-              </div>
-              <%= image_tag flat.image, class: "card-user avatar avatar-large" %>
-              <a class="card-link" href="#" ></a>
-            </div>
-          </div>
-        <% end %>
+          <% data.flats.each do |owner, flat| %>
+            <%= partial "card", :locals => {:flat => flat, :owner => owner } %>
+          <% end %>
 
         </div>
       </div>
     </div>
+
+
 
     <div class="text-center padded" id="newsletter">
       <h2>Get news from us</h2>

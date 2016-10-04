@@ -1,1 +1,34 @@
-<h1> Je suis <%= owner %> </h1>
+
+<% flat = data.flats[owner] %>
+
+
+  <div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url( <%= image_path flat.owner_picture %> );">
+      <div class="banner-content">
+        <h1>Welcome at <%= flat.name %></h1>
+        <p><%= flat.summary %></p>
+      </div>
+    </div>
+
+
+<table class="table table-striped">
+   <% flat.each do |key, value| %>
+    <tr>
+      <td> <%= key %></td>
+      <td> <%= value %></td>
+    </tr>
+   <% end %>
+</table>
+
+
+<div class="container">
+  <div class="row">
+    <% if flat.wifi %>
+    <div class="col-xs-12 col-md-3">
+        <i class="fa fa-wifi"></i> Wifi
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+
